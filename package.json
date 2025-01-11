@@ -1,15 +1,22 @@
 {
-  "name": "study-npm-publish",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@mjun0328/study-npm-publish",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "styled-components": "^6.1.14"
