@@ -10,7 +10,7 @@ export default defineConfig({
       entry: resolve(__dirname, "src/index.ts"),
       name: "study-npm-publish",
       formats: ["es", "umd"],
-      fileName: (format) => `study-npm-publish.${format}.js`,
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
